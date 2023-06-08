@@ -1,4 +1,4 @@
-package com.retroBoard.retroBoard;
+package com.retroBoard.retroBoard.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -9,7 +9,7 @@ public class User {
 
     @Id
     @GeneratedValue
-    private long id;
+    private int id;
     private String userName;
     private String password;
 
@@ -22,7 +22,7 @@ public class User {
 
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
